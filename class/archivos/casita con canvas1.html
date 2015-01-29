@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)file:///media/JACK/pasos/c4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Esta es mi casita</title>
+		
+	</head>
+<body>
+
+	<center>
+		<h2>Casita</h2>
+
+	<canvas id="myCanvas" width="800" height="500" style="border:1px solid #c3c3c3; border-radius:0.5em;">
+		Tu Navegador no soporta CANVAS de HTML5.
+	</canvas>
+	<img src="./Dibujo de Curvas_files/Bib_05.jpg" alt="Curva Cuadrática">
+
+	</center>
+
+<script>
+
+
+
+//casa
+var c = document.getElementById("myCanvas");
+var contexto = c.getContext("2d");
+contexto.fillStyle = "rgb(155, 100, 100)";
+contexto.fillRect(115, 200, 500, 300);
+contexto.lineWidth = 2;
+contexto.strokeStyle = "black";
+contexto.stroke();
+//puerta
+contexto.fillStyle = "rgb(100, 100, 100)";
+contexto.fillRect(150, 350, 100, 300);
+//ventana 1
+contexto.fillStyle = "blue";
+contexto.fillRect(450, 250, 100, 100);
+//ventana 2
+contexto.fillStyle = "rgb(0, 0, 255)";
+contexto.fillRect(300, 250, 100, 100);
+//chimenea
+contexto.fillStyle = "rgb(23, 0, 0)";
+contexto.fillRect(150, 50, 100, 100);
+//sol
+contexto.beginPath();
+contexto.arc(700, 75, 50, 0, 2.00 * Math.PI); //el circulo completo es 2*Math.PI
+contexto.fillStyle = "orange";
+contexto.fill();
+contexto.lineWidth = 2;
+contexto.strokeStyle = "red";
+contexto.stroke();
+//manija de la puerta
+contexto.beginPath();
+contexto.arc(170, 420, 5, 0, 2.00 * Math.PI); //el circulo completo es 2*Math.PI
+contexto.fillStyle = "rgb(0, 0, 0)";
+contexto.fill();
+contexto.lineWidth = 2;
+contexto.strokeStyle = "black";
+contexto.stroke();
+//techo casa
+contexto.beginPath();
+contexto.moveTo(75, 200);
+contexto.lineTo(550, 200);
+contexto.lineTo(650, 200);
+contexto.lineTo(350, 24);
+contexto.fillStyle="red";
+contexto.fill();
+contexto.stroke();
+//pasto
+contexto.fillStyle = "rgb(0, 255, 0)";
+contexto.fillRect(0, 480, 800, 20);
+</script>
+
+</body>
+</html>
+
+//jpopulos1@hotmail.com
